@@ -1,0 +1,95 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Sum = %d\n", a + b);
+    printf("Difference = %d\n", a - b);
+    printf("Product = %d\n", a * b);
+
+    if (b != 0)
+        printf("Quotient = %.2f\n", (float)a / b);
+    else
+        printf("Quotient cannot be calculated (division by zero).\n");
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    float radius, area, circumference;
+    const float PI = 3.14159;
+
+    printf("Enter radius: ");
+    scanf("%f", &radius);
+
+    area = PI * radius * radius;
+    circumference = 2 * PI * radius;
+
+    printf("Area = %.2f\n", area);
+    printf("Circumference = %.2f\n", circumference);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, m4, m5;
+    float total, average;
+
+    printf("Enter marks of 5 subjects: ");
+    scanf("%f %f %f %f %f", &m1, &m2, &m3, &m4, &m5);
+
+    total = m1 + m2 + m3 + m4 + m5;
+    average = total / 5;
+
+    printf("Total = %.2f\n", total);
+    printf("Average = %.2f\n", average);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
